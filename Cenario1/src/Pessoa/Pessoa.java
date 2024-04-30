@@ -5,19 +5,12 @@ public class Pessoa {
   private  Pessoa marido;
     private Pessoa filho;
 
-    public Pessoa(String nome, Pessoa marido, Pessoa filho) {
-        this.nome = nome;
-        this.marido = marido;
-        this.filho = filho;
-    }
-    public Pessoa(String nome, Pessoa filho) {
-        this.nome = nome;
-        this.filho = filho;
-    }
+   
     public Pessoa(String nome) {
         this.nome = nome;
         
     }
+
     @Override
     public String toString() {
         if (marido==null) {
@@ -25,6 +18,7 @@ public class Pessoa {
         }
         return nome + " -- Casado com: "+ marido.nome +" -- filhos: \n"+ filho ;
     }
+    
     public String getNome() {
         return nome;
     }
@@ -42,6 +36,14 @@ public class Pessoa {
     }
     public void setFilho(Pessoa filho) {
         this.filho = filho;
+    }
+
+    public void addFilho(Pessoa pessoa){
+        this.filho = pessoa;
+    }
+
+    public void addMarido(Pessoa pessoa){
+        this.marido = pessoa;
     }
 
     

@@ -5,9 +5,8 @@ public class App {
        
 
         Pessoa lily = new Pessoa("lily");
-        
-        lily.setMarido(new Pessoa("oliver"));
-        lily.setFilho(new Pessoa("pedro"));
+        lily.addMarido(new Pessoa("oliver"));
+        lily.addFilho(new Pessoa("pedro"));
         System.out.println(lily);
     }
 }
