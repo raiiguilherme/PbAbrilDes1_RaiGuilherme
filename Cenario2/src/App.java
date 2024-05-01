@@ -1,14 +1,17 @@
 import parque.RodaGigante;
+import usuarios.Adulto;
 import usuarios.Crianca;
 
 public class App {
     public static void main(String[] args) throws Exception {
         RodaGigante rodaGigante = new RodaGigante();
 
-       Crianca ana = new Crianca("ana", 14);
-       Crianca clara = new Crianca("clara", 13);
+       Adulto ana = new Adulto("Ana", 40);
+       Adulto maria = new Adulto("Ana", 40);
+       Crianca clara = new Crianca("Clara", 13, ana);
 
-        rodaGigante.assento(5, ana, clara);
+        rodaGigante.cadeira(5, clara, ana);
+        rodaGigante.cadeira(1, maria);
         rodaGigante.status();
 
 

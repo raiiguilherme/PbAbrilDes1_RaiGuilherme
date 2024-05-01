@@ -6,7 +6,7 @@ public class Gondola {
     private int numero;
     private Pessoa assento1;
     private Pessoa assento2;
-    
+
     public int getNumero() {
         return numero;
     }
@@ -26,5 +26,6 @@ public class Gondola {
         this.assento2 = assento2;
     }
 
+    
     
 }
