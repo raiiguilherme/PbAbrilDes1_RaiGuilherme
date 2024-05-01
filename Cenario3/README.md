@@ -4,7 +4,7 @@
 Para utilizar o projeto, só é preciso ter o mysql instalado na maquina
 
  ## Construção
-   * Tabela Pessoas
+   * Tabela Pessoa
    * Tabela Gondola
 
    ### Tabela Pessoa:
@@ -12,6 +12,6 @@ Para utilizar o projeto, só é preciso ter o mysql instalado na maquina
 
    ### Tabela Gondola
 
-   Na tabela gondola, foi criado um atributo cadeira, este que ja serve de refencia sendo então o id.
+   Na tabela gondola, foi criado um atributo cadeira, este que ja serve de referencia sendo então o id.
    foram criados tambem o assento1 e assento2, esses que são chaves estrangeiras que fazem refencia aos id_pessoa da tabela pessoa.
 
