@@ -15,6 +15,10 @@ public class Crianca extends Pessoa{
         super(nome,idade);
         this.responsavel = responsavel;
     }
+    public Crianca(String nome, int idade) {
+        super(nome,idade);
+        
+    }
 
 
 
