@@ -1,4 +1,4 @@
-# Projeto da Roda Gigante
+# Script da Roda Gigante
 
 ## Instalação
 Para utilizar o projeto, só é preciso ter o mysql instalado na maquina
