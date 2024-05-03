@@ -8,7 +8,14 @@ public class App {
         triste = ":-(";
         Scanner s = new Scanner(System.in); //scanner para ler as entradas via terminal
 
-        frase = s.nextLine();
+        System.out.println("Verificador de Sentimentos");
+        System.out.println("-------------------------");
+        System.out.print("Digite aqui a sua mensagem utilizando emojis:");
+        frase = s.nextLine(); //aguardando a entrada via terminal
+
+
+
+        //Logica da aplicação
         String emojiTriste = Pattern.quote(triste); //aceitando caracteres especiais 
         String emojiFeliz = Pattern.quote(feliz);
     

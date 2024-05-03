@@ -1,18 +1,22 @@
-## Getting Started
+# Verificador de Sentimentos
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Instalação
+Para utilizar o projeto, só é preciso colocalo em sua IDE de preferencia e ter o java instalado em sua maquina
+    
 
-## Folder Structure
+ ## Logica da Aplicação
+   * Utilizando o metodo Split, foi possivel dividir a String a cada ocorrencia do emoji, podendo assim contar quantos emojis tristes ou felizes possuia aquela String
+   * Utilizando um encadeado bem simples de if e else, verificamos se a ocorrencia de emojis felizes era maior, menor ou igual a de emojis tristes.
+   * Utilização do Scanner para ler as entradas do teclado via terminal
 
-The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+   ### Emojis felizes maiores do que emojis tristes:
+   * O resultado gerado pela analise é: Divertido
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+   ### Emojis felizes menores do que emojis tristes:
+   * O resultado gerado pela analise é: Chateado
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+   ### Quantidades iguais de emojis tristes e felizes:
+   * O resultado gerado pela analise é: Neutro
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+ 
