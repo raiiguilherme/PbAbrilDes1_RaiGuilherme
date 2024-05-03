@@ -6,14 +6,24 @@ public class App {
         String frase, feliz, triste;
         feliz = ":-)";
         triste = ":-(";
-        Scanner s = new Scanner(System.in);
+        Scanner s = new Scanner(System.in); //scanner para ler as entradas via terminal
 
         frase = s.nextLine();
-        String caracteresTristes = Pattern.quote(triste); //aceitando caracteres especiais 
-        String caracteresFeliz = Pattern.quote(feliz);
+        String emojiTriste = Pattern.quote(triste); //aceitando caracteres especiais 
+        String emojiFeliz = Pattern.quote(feliz);
     
-        System.out.println(frase.split(caracteresTristes, -1).length-1);
-        System.out.println(frase.split(caracteresFeliz, -1).length-1);
+        if(frase.split(emojiFeliz, -1).length-1 > frase.split(emojiTriste, -1).length-1){ //verificando se o numero de ocorrencias de emoji feliz é maior que o de emojis tristes
+            System.out.println("Divertido");
+        }
+        else if (frase.split(emojiFeliz, -1).length-1 < frase.split(emojiTriste, -1).length-1){ //verificando se o numero de ocorrencias de emoji feliz é menor que o de emoji tristes
+            System.out.println("Chateado");
+        }
+        else{ //se nao for maior nem menor, então na logica eles serão iguais (Neutro)
+            System.out.println("Neutro");
+        }
+        
+       
+       
         
 
 
